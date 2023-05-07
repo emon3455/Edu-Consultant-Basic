@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-white{
+    color: white;
+}
+
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
+/* common style */
+
+/* header section start */
+header{
+    position: relative;
+}
+.navbar{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 0 1rem;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.nav-title{
+    width: 40%;
+    font-size: 1.8rem;
+}
+.nav-menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    transition: transform 0.4s;
+    text-align: center;
+}
+
+.nav-menu a:hover{
+    color: cyan;
+    border-radius: 10px;
+    box-shadow: 0 0 0.6rem #26b3b3,
+                0 0 0.6rem #26b3b3;
+    transform: scale(1.1);
+}
+
+
+
+.banner{
+    height: 90vh;
+    width: 100%;
+    background-image: url("../assets/images/cosulting/cns-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+    background-color: rgb(129, 129, 129);
+    background-blend-mode: multiply;
+}
+/* header section end */
