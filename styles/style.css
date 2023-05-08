@@ -22,22 +22,6 @@ section{
     padding: 1rem;
 }
 
-/* height width */
-.w-50{
-    width: 50%;
-}
-.h-50{
-    height: 50%;
-}
-
-.h-20{
-    height: 20rem;
-}
-
-.w-40{
-    width: 40rem;
-}
-
 /* flex */
 .center-container{
     display: flex;
@@ -252,6 +236,10 @@ section{
     margin: 0 3rem;
 }
 
+.mx-auto{
+    margin: 0 auto;
+}
+
 
 /* box/card start */
 .box{
@@ -280,6 +268,40 @@ section{
     color: #474747;
     text-align: justify;
 }
+
+
+/* height width */
+.w-50{
+    width: 50%;
+}
+.h-50{
+    height: 50%;
+}
+
+.h-20{
+    height: 20rem;
+}
+
+.h-30{
+    height: 30rem;
+}
+
+.w-10{
+    width: 10rem;
+}
+
+.w-20{
+    width: 20rem;
+}
+
+.w-30{
+    width: 30rem;
+}
+
+.w-40{
+    width: 40rem;
+}
+
 /* common style  end*/
 
 
