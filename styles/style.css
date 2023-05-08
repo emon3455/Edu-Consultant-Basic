@@ -13,6 +13,10 @@ section{
     margin: 5rem 0;
 }
 
+.main-body{
+    background-color: #fffbfa;
+    padding: 1rem;
+}
 
 /* flex */
 .center-container{
@@ -39,13 +43,20 @@ section{
     gap: 1rem;
     justify-items: center;
 }
+.col4-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+    justify-items: center;
+}
 
 /* text related */
 .text-white{
     color: white;
 }
 
-.heading , .heading2{
+.heading , .heading2 , .heading3{
     font-size: 4rem;
     text-align: center;
     font-weight: 700;
@@ -54,6 +65,10 @@ section{
 
 .heading2{
     font-size: 3rem;
+}
+
+.heading3{
+    font-size: 2.5rem;
 }
 
 .text-details{
@@ -312,10 +327,7 @@ section{
 
 
 /* instructors section start */
-.instructors{
-    background-color: #f6fdff;
-    padding: 1rem;
-}
+
 /* instructors section end */
 
 /* footer start */
