@@ -22,6 +22,22 @@ section{
     padding: 1rem;
 }
 
+/* height width */
+.w-50{
+    width: 50%;
+}
+.h-50{
+    height: 50%;
+}
+
+.h-20{
+    height: 20rem;
+}
+
+.w-40{
+    width: 40rem;
+}
+
 /* flex */
 .center-container{
     display: flex;
@@ -228,6 +244,12 @@ section{
 }
 .mx-2{
     margin: 0 2rem;
+}
+.my-3{
+    margin: 3rem 0;
+}
+.mx-3{
+    margin: 0 3rem;
 }
 
 
