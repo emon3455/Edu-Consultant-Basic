@@ -10,8 +10,12 @@ body{
 }
 
 section{
-    margin: 5rem 0;
+    margin:  2rem 0;
 }
+.section{
+    margin: 4rem 0;
+}
+
 
 .main-body{
     background-color: #fffbfa;
@@ -27,13 +31,29 @@ section{
 
 .col2-flex{
     display: flex;
-    justify-content: space-around;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.col2-flex-left{
+    width: 50%;
+    padding: 1rem;
+}
+.col2-flex-right{
+    width: 50%;
+    padding: 1rem;
 }
 
 .flex-col{
     display: flex;
     flex-direction: column;
+}
+.flex-row{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
 }
 
 .col3-grid{
@@ -60,7 +80,7 @@ section{
     font-size: 4rem;
     text-align: center;
     font-weight: 700;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 .heading2{
@@ -238,12 +258,10 @@ section{
     color: #474747;
     text-align: justify;
 }
-
 /* common style  end*/
 
 
 /* header section start */
-
 .navbar{
     height: 10vh;
     display: flex;
@@ -283,6 +301,14 @@ section{
     transform: scale(1.1);
 }
 
+.active{
+    color: cyan;
+    border-radius: 10px;
+    box-shadow: 0 0 0.6rem #26b3b3,
+                0 0 0.6rem #26b3b3;
+    transform: scale(1.1);
+}
+
 .banner{
     height: 90vh;
     width: 100%;
@@ -293,23 +319,17 @@ section{
     background-color: rgb(129, 129, 129);
     background-blend-mode: multiply;
 }
+
 /* header section end */
 
 
 /* about section start */
-
-.about{
-    align-items: center;
-    gap: 3rem;
-}
-
 .about-info{
     width: 50%;
     padding: 1rem;
 }
 
 .about-img-container{
-    width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
@@ -322,23 +342,22 @@ section{
     height: 100%;
     border-radius: 10px;
 }
-
 /* about section end */
+
 
 
 /* instructors section start */
 
 /* instructors section end */
 
-/* footer start */
 
+/* footer start */
 footer a{
     text-decoration: none;
     color: #3d3d3d;
     font-size: 1.1rem;
     margin-bottom: 0.4rem;
 }
-
 /* footer end */
 
 
