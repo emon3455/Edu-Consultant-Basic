@@ -56,6 +56,12 @@ section{
     justify-content: space-between;
 }
 
+.col2-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+}
 .col3-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -271,6 +277,12 @@ section{
 
 
 /* height width */
+.h-full{
+    height: 100%;
+}
+.w-full{
+    width: 100%;
+}
 .w-50{
     width: 50%;
 }
