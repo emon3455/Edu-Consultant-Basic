@@ -127,41 +127,6 @@ section{
     border-radius: 10px;
 }
 
-/* button */
-.btn{
-    padding: 0.7rem;
-    font-size: 1.4rem;
-    background-color: #292929;
-    border: none;
-    color: white;
-    border-radius: 10px;
-    font-weight: 500;
-}
-
-.btn-primary{
-    background-color: #8059ec;
-    transition: all 0.4s ease-in;
-    cursor: pointer;
-}
-
-.btn-primary:hover{
-    background-color: #f1588b;
-}
-
-.btn-secondary{
-    background-color: #111111;
-    transition: all 0.2s ease-in;
-    cursor: pointer;
-    color: white;
-}
-
-.btn-secondary:hover{
-    color: cyan;
-    border-radius: 10px;
-    box-shadow: 0 0 0.6rem #26b3b3,
-                0 0 0.6rem #26b3b3;
-    transform: scale(1.1);
-}
 
 /* font size */
 .fs-1{
@@ -213,6 +178,20 @@ section{
 .py-2{
     padding: 2rem 0;
 }
+.px-4{
+    padding: 0 4rem;
+}
+
+.py-4{
+    padding: 4rem 0;
+}
+.px-6{
+    padding: 0 6rem;
+}
+
+.py-6{
+    padding: 6rem 0;
+}
 
 
 /* margin */
@@ -246,6 +225,41 @@ section{
     margin: 0 auto;
 }
 
+/* button */
+.btn{
+    padding: 0.7rem;
+    font-size: 1.4rem;
+    background-color: #292929;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.btn-primary{
+    background-color: #8059ec;
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: #f1588b;
+}
+
+.btn-secondary{
+    background-color: #111111;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-secondary:hover{
+    color: cyan;
+    border-radius: 10px;
+    box-shadow: 0 0 0.6rem #26b3b3,
+                0 0 0.6rem #26b3b3;
+    transform: scale(1.01);
+}
 
 /* box/card start */
 .box{
@@ -275,6 +289,30 @@ section{
     text-align: justify;
 }
 
+/* form */
+.input-label-light{
+    color: gray;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+input{
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid #cccccc;
+}
+
+textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    height: 8rem;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
 
 /* height width */
 .h-full{
@@ -285,6 +323,12 @@ section{
 }
 .w-50{
     width: 50%;
+}
+.w-80{
+    width: 80%;
+}
+.w-90{
+    width: 90%;
 }
 .h-50{
     height: 50%;
@@ -390,7 +434,6 @@ section{
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
     padding: 0.5rem;
-    margin-top: 2rem;
 }
 
 .about-img-container img{
