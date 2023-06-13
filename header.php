@@ -106,3 +106,6 @@ include_once('connection.php');
     </div>
 </nav>
 <!-- navbar end -->
+
+<!-- main start -->
+<main class="">
