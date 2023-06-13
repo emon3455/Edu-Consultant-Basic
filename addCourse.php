@@ -2,12 +2,12 @@
 include 'header.php';
 ?>
 
-
 <!-- main start -->
 <main class="">
 
+
     <h2 class="fs-2 my-2 fw-bold text-center">
-        Please Login
+        Add Course Here
     </h2>
 
     <div class="d-md-flex flex-row-reverse justify-content-center align-items-center p-2 mb-5">
@@ -45,10 +45,36 @@ include 'header.php';
             $result = $stmt->get_result();
 
             if ($result->num_rows === 1) {
-
                 $user = $result->fetch_assoc();
                 $storedPassword = $user['password'];
 
+
+                // Verify the entered password with the stored password
+                // if ($password == $storedPassword) {
+                //     // Set session variables
+                //     $_SESSION['user_id'] = $user['id'];
+                //     $_SESSION['name'] = $user['name'];
+                //     $_SESSION['email'] = $user['email'];
+                //     $_SESSION['role'] = $user['role'];
+
+                //     // Check if the user is logged in and has a role
+                //     if (isset($_SESSION['role'])) {
+
+                //         // Redirect to the corresponding route based on the user's role
+                //         if ($_SESSION['role'] == 'admin') {
+                //             header("Location: adminHome.php");
+                //         } elseif ($_SESSION['role'] == 'instructor') {
+                //             header("Location: instructorHome.php");
+                //         } elseif ($_SESSION['role'] == 'student') {
+                //             // header("Location: home.php");
+                //             header("Location: studentHome.php");
+                //         }
+                        
+                //     }
+
+                // } else {
+                //     echo '<h2 class="text-center text-warning">Please Enter Valid Password</h2>';
+                // }
                 if (strlen($password) == strlen($storedPassword)) {
                     if ($password == $storedPassword) {
                         // Set session variables
@@ -57,8 +83,19 @@ include 'header.php';
                         $_SESSION['email'] = $user['email'];
                         $_SESSION['role'] = $user['role'];
                 
-                        header("Location: home.php");
-
+                        // Check if the user is logged in and has a role
+                        if (isset($_SESSION['role'])) {
+                
+                            // Redirect to the corresponding route based on the user's role
+                            if ($_SESSION['role'] == 'admin') {
+                                header("Location: adminHome.php");
+                            } elseif ($_SESSION['role'] == 'instructor') {
+                                header("Location: instructorHome.php");
+                            } elseif ($_SESSION['role'] == 'student') {
+                                // header("Location: home.php");
+                                header("Location: studentHome.php");
+                            }
+                        }
                     } else {
                         echo '<h2 class="text-center text-warning">Please Enter Valid Password</h2>';
                     }
