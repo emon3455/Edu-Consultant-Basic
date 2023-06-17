@@ -60,20 +60,28 @@ include_once('connection.php');
                     if ($role == 'student') {
                         echo '
                             <li class="nav-item">
+                                <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="selectedCourse.php">Selected Courses</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="enrolledCourse.php">Enrolled Courses</a>
                             </li>';
                     } elseif ($role == 'instructor') {
-                        echo '<li class="nav-item">
+                        echo '
+                            <li class="nav-item">
                                 <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="addBlog.php">Add Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="manageBlog.php">Manage Blog</a>
+                                <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="manageMyBlog.php">Manage My Blog</a>
                             </li>
                             <li class="nav-item">
                                 <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="addCourse.php">Add Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="manageMyCourse.php">Manage My Course</a>
                             </li>';
                     } elseif ($role == 'admin') {
-                        echo '<li class="nav-item">
+                        echo '
+                            <li class="nav-item">
                                 <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="addCourse.php">Add Course</a>
                             </li>
                             <li class="nav-item">
@@ -86,7 +94,7 @@ include_once('connection.php');
                                 <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="manageAllBlog.php">Manage Blogs</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="manageUser.php">Manage User</a>
+                                <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="manageAllUsers.php">Manage User</a>
                             </li>';
                     }
 
@@ -108,4 +116,4 @@ include_once('connection.php');
 <!-- navbar end -->
 
 <!-- main start -->
-<main class="">
+<main class="p-2">

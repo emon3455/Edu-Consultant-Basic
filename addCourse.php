@@ -48,7 +48,7 @@ include 'header.php';
                 </div>
 
 
-                <input type="submit" name="submit" value="Add Class" class="btn btn-warning mb-2">
+                <input type="submit" name="submit" value="Add Class" class="btn btn-info mb-2">
 
             </form>
         </div>
@@ -69,13 +69,19 @@ include 'header.php';
                 $run = mysqli_multi_query($mysqli, $sql);
 
                 if ($run) {
-                    echo '<h2 class="text-center text-success fw-bold mb-4">Class Successfully Added</h2>';
+                    echo '<div class="alert alert-success text-center fs-4" role="alert">
+                            Course SuccessFully Added
+                        </div>';
                 } else {
-                    echo '<h2 class="text-center text-danger fw-bold mb-4">Sorry Something Went Wrong Try Again!!</h2>';
+                    echo '<div class="alert alert-danger text-center fs-4" role="alert">
+                            Something Went Wrong! Please try again.
+                        </div>';
                 }
 
             } else {
-                echo '<h2 class="text-center text-warning">All Field are required</h2>';
+                echo '<div class="alert alert-danger text-center fs-4" role="alert">
+                        All Field are Required
+                    </div>';
             }
         }
     }

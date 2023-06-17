@@ -2,9 +2,6 @@
 include 'header.php';
 ?>
 
-<!-- main start -->
-<main class="">
-
     <!-- banner start -->
     <section class="">
 

@@ -29,8 +29,11 @@ if (isset($_POST['update'])) {
     $sql = "UPDATE course SET ID=$id, course_name='$course_name', course_image='$course_image', teacher_name='$teacher_name' , teacher_email='$teacher_email', price=$price where ID=$id ";
     $run = mysqli_query($mysqli, $sql);
     if ($run) {
-        // echo "<h1> Data Updated  </h1>";
-        header("location: manageAllCourse.php ");
+        if ($_SESSION['role'] == 'admin') {
+            header("location: manageAllCourse.php");
+        }else {
+            header("location: manageMyCourse.php");
+        }
     } else {
         echo "<h1> Data not Updated  </h1>";
     }
