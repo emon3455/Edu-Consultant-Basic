@@ -5,7 +5,7 @@ include 'header.php';
 <!-- main start -->
 <main class="">
 
-    <h2 class="text-center fw-bold my-3">Manage Blogs</h2>
+    <h2 class="text-center my-2 font-eb-garamond fs-2 fw-bold">Manage Blogs</h2>
 
     <div class="row row-cols-1 mb-3 row-cols-md-3 g-4">
         <?php

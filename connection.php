@@ -9,7 +9,6 @@ $mysqli = new mysqli("localhost", $username, $password, $database);
 // check connection:
 if($mysqli->connect_error){
     die("connection field: " . $mysqli->connect_error);
-    echo "conection unsuccessfull";
 }
 // echo "connection successfully  done";
 ?>

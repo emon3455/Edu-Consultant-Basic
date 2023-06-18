@@ -4,7 +4,7 @@ include 'header.php';
 
 
 
-<h2 class="fs-2 my-2 fw-bold text-center">
+<h2 class="text-center my-2 font-eb-garamond fs-2 fw-bold">
     Add Blog Here
 </h2>
 
@@ -47,7 +47,7 @@ include 'header.php';
             </div>
 
 
-            <input type="submit" name="submit" value="Add Blog" class="btn btn-info mb-2">
+            <input type="submit" name="submit" value="Add Blog" class="btn btn-warning mb-2">
 
         </form>
     </div>

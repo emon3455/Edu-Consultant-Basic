@@ -2,7 +2,7 @@
 include 'header.php';
 ?>
 
-<h2 class="fs-2 my-2 fw-bold text-center my-5">
+<h2 class="text-center my-2 font-eb-garamond fs-2 fw-bold">
     Manage Your Course
 </h2>
 
@@ -11,14 +11,14 @@ $user_email = $_SESSION['email'];
 $sql = "SELECT * FROM course where teacher_email='$user_email'";
 $result = mysqli_query($mysqli, $sql);
 
-echo '<table class="table  table-dark table-striped">
+echo '<table class="table table-light  table-striped">
         <thead>
-            <tr>
+            <tr class="table-dark">
                 <th scope="col">ID</th>
                 <th scope="col">Course Name</th>
                 <th scope="col">Course Image</th>
                 <th scope="col">Teacher Name</th>
-                <th scope="col">Teacher Image</th>
+                <th scope="col">Teacher Email</th>
                 <th scope="col">Price</th>
                 <th scope="col">Edit</th>
                 <th scope="col">Delete</th>
@@ -36,7 +36,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     $price = $row["price"];
 
     echo '
-            <tr>
+            <tr class="fw-semibold">
                 <td>' . $ID . '</td>
                     
                 <td>' . $course_name . '</td>              
@@ -45,10 +45,10 @@ while ($row = mysqli_fetch_assoc($result)) {
                 <td>' . $teacher_email . '</td>
                 <td>$' . $price . '</td>
                 <td>
-                    <a class="btn btn-warning text-white" href="updateClass.php?updateid=' . $ID . '">Update</a>
+                    <a class="btn btn-warning fw-semibold" href="updateClass.php?updateid=' . $ID . '">Update</a>
                 </td>
                 <td>
-                    <a class="btn btn-danger text-white" href="deleteClass.php?deleteid=' . $ID . '">Delete</a>
+                    <a class="btn btn-danger text-white fw-semibold" href="deleteClass.php?deleteid=' . $ID . '">Delete</a>
                 </td>
             </tr>';
 }

@@ -2,7 +2,7 @@
 include 'header.php';
 ?>
 
-<h1 class="text-center fw-bold">Delete Blogs</h1>
+<h1 class="text-center my-5 font-eb-garamond display-6 fw-bold">Delete Blogs</h1>
 
 <?php 
 if(isset($_GET['deleteid']))

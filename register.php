@@ -6,7 +6,7 @@ include 'header.php';
 <main class="">
 
 
-    <h2 class="fs-2 my-4 fw-bold text-center">
+    <h2 class="text-center my-5 font-eb-garamond display-6 fw-bold">
         Please Register
     </h2>
 
@@ -70,7 +70,7 @@ include 'header.php';
                     $role = $_POST['role'];
 
                     $sql = "INSERT INTO users(name, email, password, role) VALUES('$name','$email','$password','$role')";
-                    $run = mysqli_multi_query($mysqli, $sql) or die(mysql_query());
+                    $run = mysqli_multi_query($mysqli, $sql);
 
                     if ($run) {
                         echo '<h2 class="text-center text-success">User Successfully Registerd</h2>';

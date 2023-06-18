@@ -6,7 +6,7 @@ include 'header.php';
 <!-- main start -->
 <main class="">
 
-    <h2 class="fs-2 my-2 fw-bold text-center">
+    <h2 class="text-center my-5 font-eb-garamond display-6 fw-bold">
         Please Login
     </h2>
 
@@ -56,7 +56,7 @@ include 'header.php';
                         $_SESSION['name'] = $user['name'];
                         $_SESSION['email'] = $user['email'];
                         $_SESSION['role'] = $user['role'];
-                
+
                         header("Location: home.php");
 
                     } else {
@@ -64,7 +64,7 @@ include 'header.php';
                     }
                 } else {
                     echo '<h2 class="text-center text-warning">Invalid Password Length</h2>';
-                }                
+                }
 
             } else {
                 echo '<h2 class="text-center text-danger">Sorry Try Again!! Email is Not Valid</h2>';

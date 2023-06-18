@@ -5,7 +5,7 @@ include 'header.php';
 <!-- main start -->
 <main class="">
 
-    <h2 class="text-center my-3">All Blogs</h2>
+    <h2 class="text-center my-5 font-eb-garamond display-6 fw-bold">All Blogs</h2>
 
     <div class="row row-cols-1 mb-3 row-cols-md-3 g-4">
         <?php

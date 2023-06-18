@@ -3,11 +3,12 @@ include 'header.php';
 ?>
 
 <h2 class="text-center my-2 font-eb-garamond fs-2 fw-bold">
-    Manage All Course
+    Your Selected Classes
 </h2>
 
 <?php
-$sql = "SELECT * FROM course";
+$user_email = $_SESSION['email'];
+$sql = "SELECT * FROM selectedCourse where student_email='$user_email'";
 $result = mysqli_query($mysqli, $sql);
 
 echo '<table class="table  table-success table-striped">
@@ -17,10 +18,9 @@ echo '<table class="table  table-success table-striped">
                 <th scope="col">Course Name</th>
                 <th scope="col">Course Image</th>
                 <th scope="col">Teacher Name</th>
-                <th scope="col">Teacher Image</th>
+                <th scope="col">Teacher Email</th>
                 <th scope="col">Price</th>
-                <th scope="col">Edit</th>
-                <th scope="col">Delete</th>
+                <th scope="col">Remove</th>
             </tr>
         </thead>
         <tbody>
@@ -35,7 +35,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     $price = $row["price"];
 
     echo '
-            <tr class="fw-semibold">
+            <tr class="fw-bold">
                 <td>' . $ID . '</td>
                     
                 <td>' . $course_name . '</td>              
@@ -44,10 +44,7 @@ while ($row = mysqli_fetch_assoc($result)) {
                 <td>' . $teacher_email . '</td>
                 <td>$' . $price . '</td>
                 <td>
-                    <a class="btn btn-warning fw-semibold" href="updateClass.php?updateid=' . $ID . '">Update</a>
-                </td>
-                <td>
-                    <a class="btn btn-danger text-white fw-semibold" href="deleteClass.php?deleteid=' . $ID . '">Delete</a>
+                    <a class="btn btn-danger text-white fw-semibold" href="deleteSelectedClass.php?deleteid=' . $ID . '">Delete</a>
                 </td>
             </tr>';
 }
@@ -60,8 +57,6 @@ mysqli_free_result($result);
 $mysqli->close();
 ?>
 
-
 <?php
-// Include the footer file
 include 'footer.php';
 ?>

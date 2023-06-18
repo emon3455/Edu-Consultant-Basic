@@ -4,7 +4,7 @@ include 'header.php';
 
 
 
-    <h2 class="fs-2 my-2 fw-bold text-center">
+    <h2 class="text-center my-2 font-eb-garamond fs-2 fw-bold">
         Add Course Here
     </h2>
 

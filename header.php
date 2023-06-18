@@ -33,7 +33,7 @@ include_once('connection.php');
 <!-- navbar start -->
 <nav class="navbar navbar-expand-lg bg-info-subtle sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="#">Edu-Consultant BD</a>
+        <a class="navbar-brand fw-bold" href="home.php">Edu-Consultant BD</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -63,7 +63,7 @@ include_once('connection.php');
                                 <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="selectedCourse.php">Selected Courses</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="enrolledCourse.php">Enrolled Courses</a>
+                                <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="addReview.php">Add Review</a>
                             </li>';
                     } elseif ($role == 'instructor') {
                         echo '
@@ -95,6 +95,9 @@ include_once('connection.php');
                             </li>
                             <li class="nav-item">
                                 <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="manageAllUsers.php">Manage User</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary btn-sm me-lg-1 mb-1 mb-lg-0 " href="manageReviews.php">Manage Reviews</a>
                             </li>';
                     }
 

@@ -2,7 +2,7 @@
 include 'header.php';
 ?>
 
-<h2 class="fs-2 my-2 fw-bold text-center">
+<h2 class="text-center my-5 font-eb-garamond display-6 fw-bold">
     Update Blog
 </h2>
 
